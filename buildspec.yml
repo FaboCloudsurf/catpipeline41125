@@ -1,5 +1,13 @@
 version: 0.2
 
+env:
+  variables:
+    AWS_ACCOUNT_ID: "730335577638"  # Your AWS account ID
+    AWS_DEFAULT_REGION: "us-east-1"  # AWS region
+    IMAGE_REPO_NAME: "catpipeline_ecr_repo_1"  # Your ECR repository name
+    IMAGE_TAG: "latest"  # The image tag you're using
+
+
 phases:
   pre_build:
     commands:
